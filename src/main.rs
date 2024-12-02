@@ -2,11 +2,12 @@ use std::io;
 use std::io::Write;
 
 mod day1;
+mod day2;
 
 fn main() {
     println!("Advent of Code 2024");
 
-    let implemented_days = 1..=1;
+    let implemented_days = 1..=2;
 
     println!("Currently implemented days:");
     for day in implemented_days.clone() { println!("{}", day); }
@@ -41,6 +42,10 @@ fn main() {
         1 => {
             println!("Day 1");
             day1::day1();
+        },
+        2 => {
+            println!("Day 2");
+            day2::day2();
         }
         _ => { println!("This should never be reached"); }
     }
