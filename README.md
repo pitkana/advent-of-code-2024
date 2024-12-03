@@ -17,3 +17,10 @@ Not so proud of this one.
 Puzzle 1 is fairly straightforward, simply checking through each report and comparing each pair of values to see if they're safe.
 
 For puzzle 2 I tried for a while to find some elegant solution to only iterate through the report once, but got frustrated and ended up going with the brute force solution of dropping every value until the test passes or the report has been run through. It still completes in less than a second on my machine, but I would've liked to make it prettier.
+
+### Day 3
+Both puzzle 1 and puzzle 2 were pretty straightforward. 
+
+For puzzle 1 I simply used regex capture groups to iterate through the data and find the multiplicand and the multiplier for each operation.
+
+For puzzle 2 I kept the regex, but iterated through the string in slices looking for the do() and don't() instructions.
