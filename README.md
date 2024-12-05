@@ -48,3 +48,12 @@ Puzzle 2 finds every instance of the letter A not on the edge of the matrix, and
 the characters on its opposite diagonals match either ('M', 'S') or ('S', 'M').
 
 Neither of the helper functions is particularly clean, but they do their jobs efficiently.
+
+### Day 5
+For both puzzles I used custom orderings. 
+
+In puzzle 1 I simply checked if the update was sorted according to the rules, and summed
+up the middle pages for the updates which were.
+
+In puzzle 2 I checked if it wasn't, and used sort_by to sort it if so, then took the sum
+of the middle pages just like puzzle 1.

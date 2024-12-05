@@ -5,11 +5,12 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 
 fn main() {
     println!("Advent of Code 2024");
 
-    let implemented_days = 1..=4;
+    let implemented_days = 1..=5;
 
     println!("Currently implemented days:");
     for day in implemented_days.clone() { println!("{}", day); }
@@ -56,6 +57,10 @@ fn main() {
         4 => {
             println!("Day 4");
             day4::day4();
+        }
+        5 => {
+            println!("Day 5");
+            day5::day5();
         }
         _ => { println!("This should never be reached"); }
     }
